@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .circle{
+            height: 500px;
+            width: 500px;
+            border-radius: 100%;
+            border: 20px solid #333333;
+            position: relative;
+            /*animation: animate 3s ease 1;*/
+        }
+
+        .circle .red-circle{
+            position: absolute;
+            rotate: -45deg;
+            left: 109px;
+            top: -45px;
+            height: 220px;
+            width: 233px;
+            background-color: red;
+            border-radius: 0 100% 0 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .circle-2{
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            height: 420px;
+            width: 420px;
+            background-color: gray;
+            border-radius: 100%;
+            z-index: -1;
+
+        }
+
+        .circle-2 p{
+            position: absolute;
+            left: 180px;
+            top: 200px;
+            color: #fcfcfc;
+            font-size: 28px;
+        }
+
+        .circle:hover {
+            animation: animate 3s ease 1;
+            z-index: -1;
+        }
+
+        @keyframes animate {
+            from{
+                transform: rotate(0deg);
+            }to{
+            transform: rotate(360deg);
+                         }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="circle">
+        <div class="red-circle"></div>
+    </div>
+    <div class="circle-2">
+        <p>RWAD</p>
+    </div>
+</body>
+</html>
